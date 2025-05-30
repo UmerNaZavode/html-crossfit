@@ -27,6 +27,7 @@
     height: var(--input-height);
     padding-inline: 31px 81px;
     background-color: transparent;
+    color: var(--color-light);
     border: var(--border);
   }
 
@@ -43,7 +44,9 @@
 
   &.transparent:hover {
     color: var(--color-dark);
-    background-color: var(--color-light-gray);
+    //background-color: var(--color-light-gray);
+    background-color: rgba(196, 196, 196, 0.7);
+
   }
 }
 

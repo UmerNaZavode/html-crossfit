@@ -1,0 +1,49 @@
+.trainings {
+  position: relative;
+  max-width: 1920px;
+  margin-inline: auto;
+  padding-top: 70px;
+  padding-bottom: 120px;
+  background-color: var(--color-dark);
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 60px;
+    @media screen and (max-width: 1200px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__item {
+    --trainigsItemBgIconSize: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 32px;
+    padding-top: var(--trainigsItemBgIconSize);
+    background: url("/src/icons/arrow-downleft.svg") 100% 0/var(--trainigsItemBgIconSize) no-repeat;
+    @media screen and (max-width: 768px) {
+      --trainigsItemBgIconSize: 50px;
+      row-gap: 10px;
+    }
+  }
+
+  &__item-title {
+    font-size: 16px;
+  }
+
+  &__item img {
+    width: 150px;
+    height: 140px;
+    @media screen and (max-width: 768px) {
+     max-width: 120px;
+    }
+  }
+
+}
+
+

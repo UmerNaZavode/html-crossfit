@@ -222,12 +222,17 @@ svg * {
 }
 
 .title-medium {
-  font-size: clamp(20px, 2.1vw, 40px);
+  font-size: clamp(20px, 2.08vw, 40px);
   line-height: 1.3;
-  color: var(--color-light);
+}
+
+.title__big {
+  font-size: clamp(30px, 3.12vw, 60px);
+  //line-height: 1.2;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   text-transform: uppercase;
+  color: var(--color-light);
 }

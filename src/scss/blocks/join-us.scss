@@ -1,0 +1,120 @@
+.join-us {
+
+  &__video-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 30px;
+    background: url("/src/img/join-us-back.jpg") center/cover no-repeat var(--color-dark-alternative);
+  }
+
+  &__video {
+    width: 100%;
+    max-width: 960px;
+    height: auto;
+  }
+
+  &__play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4px;
+    width: 200px;
+    aspect-ratio: 1;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-light);
+    background-color: transparent;
+    border: var(--border);
+    border-radius: 50%;
+    @media screen and (max-width: 768px) {
+      width: 140px;
+    }
+    @media screen and (max-width: 576px) {
+      width: 80px;
+    }
+  }
+
+  &__play-button::after {
+    content: "";
+    width: 26px;
+    aspect-ratio: 1;
+    background: url("/src/icons/arrow-topright.svg") center/contain no-repeat;
+    transition-duration: var(--transition-duration);
+  }
+
+
+  &__play-button:hover {
+    color: var(--color-dark);
+    background-color: rgba(255, 255, 255, 0.5);
+    //background-color: var(--color-light);
+  }
+
+  &__play-button:hover::after {
+    filter: invert(1);
+  }
+
+  &__body {
+    padding-bottom: 150px;
+  }
+
+  &__title {
+    position: relative;
+    margin-top: -0.4em;
+    font-size: clamp(64px, 9.37vw, 180px);
+    line-height: 1;
+    text-align: center;
+  }
+
+  &__title::after {
+    content: "";
+    display: inline-block;
+    height: 0.7em;
+    aspect-ratio: 1;
+    background: url("/src/icons/bald-arrow-down-right.svg") center/contain  no-repeat;
+    scale: 1 -1;
+    margin-left: 0.14em;
+  }
+
+  &__title:not(:last-child) {
+    margin-bottom: 130px;
+  }
+
+  &__form {
+  }
+
+  &__form-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 7px;
+  }
+
+  &__form-header:not(:last-child) {
+    margin-bottom: 52px;
+  }
+
+  &__form-subtitle {
+    font-size: 20px;
+    line-height: 1.65;
+    text-transform: uppercase;
+    color: var(--color-light);
+  }
+
+  &__form-body {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+  }
+
+  &__form-input {
+    max-width: 399px;
+  }
+}
+
