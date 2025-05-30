@@ -1,0 +1,84 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  min-height: calc(100vh - var(--header-hight));
+  padding: 37px 71px;
+  color: var(--color-light);
+  background-color: var(--color-dark-alternative);
+  @media screen and (max-width: 1200px) {
+    padding-inline: 15px;
+    row-gap: 20px;
+  }
+
+  &__body {
+    text-transform: uppercase;
+  }
+
+  &__info {
+    display: flex;
+    align-items: end;
+    font-size: clamp(16px, 1.56vw, 30px);
+    line-height: 1.27;
+    font-weight: 700;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__info::before {
+    content: "";
+    width: clamp(60px, 10.1vw, 194px);
+    aspect-ratio: 1;
+    margin-right: 30px;
+    background: url("/src/icons/bald-arrow-down-right.svg") center/contain no-repeat;
+    @media screen and (max-width: 768px) {
+      margin-right: 10px;
+    }
+  }
+
+  &__title {
+    font-size: min(18.75vw, 360px);
+    // vw (360/1920*100)
+    line-height: 1;
+  }
+
+  &__pagination-lsit {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__pagination-item {
+    display: flex;
+  }
+
+  &__pagination-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background-color: transparent;
+    border: none;
+  }
+
+
+  &__pagination-button::after {
+    content: "";
+    width: 10px;
+    aspect-ratio: 1;
+    border: var(--border);
+    border-radius: 50%;
+    transition-duration: var(--transition-duration);
+  }
+
+  &__pagination-button.current::after {
+    background-color: var(--color-light);
+  }
+  
+  &__pagination-button:not(.current):hover::after {
+    border-color: var(--color-light-gray);
+  }
+  
+}
+
+

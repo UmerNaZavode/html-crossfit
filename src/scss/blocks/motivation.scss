@@ -1,0 +1,82 @@
+.motivation {
+
+  &__list {
+  }
+
+  &__item {
+  }
+
+  &__item:nth-child(even) {
+    background-color: var(--color-dark-alternative);
+
+  }
+
+  &__item:nth-child(even) &__card {
+    flex-direction: row-reverse;
+    @media screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+    }
+  }
+
+
+  &__card {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: clamp(30px, 10.73vw, 206px);
+    @media screen and (max-width: 1200px) {
+      margin-block: 50px;
+    }
+    @media screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+      row-gap: 30px;
+      padding-block: 30px;
+    }
+  }
+
+  &__card-body {
+    padding-left: 35px;
+  }
+
+  &__card-title {
+  }
+
+  &__card-title:not(:last-child) {
+    margin-bottom: 14px;
+  }
+
+  &__card-description {
+    max-width: 400px;
+  }
+
+  &__card-description:not(:last-child) {
+    margin-bottom: 37px;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__card-button {
+  }
+
+  &__card-img {
+    margin-block: -60px;
+    @media screen and (max-width: 1919px) {
+      margin-block: -20px;
+    }
+    @media screen and (max-width: 1200px) {
+      max-width: 30%;
+      height: auto;
+      margin-bottom: 0;
+    }
+    @media screen and (max-width: 768px) {
+      max-width: 60%;
+    }
+  }
+}
+
+
+.container {
+}
+
+
