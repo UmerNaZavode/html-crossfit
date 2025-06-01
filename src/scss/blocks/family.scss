@@ -1,0 +1,54 @@
+.family {
+  background-color: var(--color-dark-alternative);
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 7px;
+    padding-top: 132px;
+    padding-bottom: 62px;
+    text-align: center;
+    @media screen and (max-width: 768px) {
+      padding-top: 132px;
+      padding-bottom: 50px;
+    }
+  }
+
+  &__title {
+  }
+
+  &__description {
+    font-size: 20px;
+    line-height: 1.65;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-light);
+    @media screen and (max-width: 576px) {
+      font-size: 16px;
+    }
+  }
+
+  &__body {
+    display: flex;
+    justify-content: center;
+    column-gap: 26px;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    @media screen and (max-width: 768px) {
+      column-gap: 12px;
+    }
+  }
+
+  &__img {
+    scroll-snap-align: start;
+    @media screen and (max-width: 1200px) {
+      height: 360px;
+    }
+    @media screen and (max-width: 768px) {
+      height: 180px;
+    }
+  }
+}
+
+

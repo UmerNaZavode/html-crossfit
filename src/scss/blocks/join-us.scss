@@ -1,4 +1,5 @@
 .join-us {
+  background-color: var(--color-dark-alternative);
 
   &__video-wrapper {
     position: relative;
@@ -93,6 +94,12 @@
 
   &__title:not(:last-child) {
     margin-bottom: 130px;
+    @media screen and (max-width: 1200px) {
+      margin-bottom: 80px;
+    }
+    @media screen and (max-width: 768px) {
+      margin-bottom: 40px;
+    }
   }
 
   &__form {
@@ -113,13 +120,22 @@
     font-size: 20px;
     line-height: 1.65;
     text-transform: uppercase;
+    text-align: center;
     color: var(--color-light);
+    @media screen and (max-width: 576px) {
+      font-size: 16px;
+    }
   }
 
   &__form-body {
     display: flex;
     justify-content: center;
     column-gap: 20px;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 20px;
+    }
   }
 
   &__form-input {

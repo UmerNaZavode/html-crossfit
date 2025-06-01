@@ -1,0 +1,45 @@
+.location {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  @media screen and (max-width: 1200px) {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    }
+
+  &__map-image {
+    width: 960px;
+    height: auto;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 15px;
+    text-align: center;
+    @media screen and (max-width: 768px) {
+      padding-bottom: 40px;
+    }
+  }
+
+  &__title {
+
+  }
+
+  &__title:not(:last-child) {
+    margin-bottom: 14px;
+  }
+
+  &__description {
+    max-width: 490px;
+  }
+
+  &__description:not(:last-child) {
+    margin-bottom: 37px;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 20px;
+    }
+  }
+}
