@@ -25,8 +25,8 @@
     line-height: 1;
     color: transparent;
     font-family: var(--font-family-accent);
-    -webkit-text-stroke: 1px var(--color-light-gray);
-    text-stroke: 1px var(--color-light-gray);
+    -webkit-text-stroke: 1px var(--color-dark-gray);
+    text-stroke: 1px var(--color-dark-gray);
   }
 
   &__title.centered::after {

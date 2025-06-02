@@ -46,12 +46,12 @@ body,
 :where(dd[class]) {
   margin-left: 0;
 }
-
-:where(fieldset[class]) {
-  margin-left: 0;
-  padding: 0;
-  border: none;
-}
+//
+//:where(fieldset[class]) {
+//  margin-left: 0;
+//  padding: 0;
+//  border: none;
+//}
 
 /**
   Убираем стандартный маркер маркированному списку,
@@ -187,10 +187,10 @@ svg * {
 /**
   Приведение рамок таблиц в классический 'collapse' вид
  */
-:where(table) {
-  border-collapse: collapse;
-  border-color: currentColor;
-}
+//:where(table) {
+//  border-collapse: collapse;
+//  border-color: currentColor;
+//}
 
 /**
   Удаляем все анимации и переходы для людей,
