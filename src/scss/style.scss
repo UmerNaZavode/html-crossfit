@@ -1,12 +1,11 @@
-//@use "blocks/base";
+//@use "blocks/reset";
+@use "blocks/base";
 @use "blocks/variables";
-@use "blocks/reset";
 @use "blocks/fonts";
 @use "blocks/button";
 @use "blocks/backdrop";
 @use "blocks/input";
 @use "blocks/header";
-@use "blocks/footer";
 @use "blocks/banner";
 @use "blocks/motivation";
 @use "blocks/trainings";
@@ -14,7 +13,7 @@
 @use "blocks/location";
 @use "blocks/family";
 @use "blocks/calculate";
-//@use "blocks/calculate-test";
+@use "blocks/footer";
 
 // 1200
 // 992

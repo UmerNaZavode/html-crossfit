@@ -1,11 +1,5 @@
 .motivation {
 
-  &__list {
-  }
-
-  &__item {
-  }
-
   &__item:nth-child(even) {
     background-color: var(--color-dark-alternative);
 
@@ -18,6 +12,10 @@
     }
   }
 
+  &__card-body.second {
+    margin-left: -69px;
+    margin-top: 44px;
+  }
 
   &__card {
     display: flex;
@@ -36,9 +34,7 @@
 
   &__card-body {
     padding-left: 35px;
-  }
-
-  &__card-title {
+    margin-top: -27px;
   }
 
   &__card-title:not(:last-child) {
@@ -56,11 +52,8 @@
     }
   }
 
-  &__card-button {
-  }
-
   &__card-img {
-    margin-block: -60px;
+    margin-block: -64px;
     @media screen and (max-width: 1919px) {
       margin-block: -20px;
     }
@@ -73,10 +66,6 @@
       max-width: 60%;
     }
   }
-}
-
-
-.container {
 }
 
 

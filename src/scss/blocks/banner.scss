@@ -2,8 +2,9 @@
   display: flex;
   flex-direction: column;
   justify-content: end;
-  min-height: calc(100vh - var(--header-hight));
-  padding: 37px 71px;
+  height: 985px;
+  padding: 31px 122px;
+  //min-height: calc(100vh - var(--header-hight));
   color: var(--color-light);
   background-color: var(--color-dark-alternative);
   @media screen and (max-width: 1200px) {
@@ -38,6 +39,7 @@
   }
 
   &__title {
+    margin-left: -50px;
     font-size: min(18.75vw, 360px);
     // vw (360/1920*100)
     line-height: 1;
