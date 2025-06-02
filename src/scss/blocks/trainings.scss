@@ -1,7 +1,7 @@
 .trainings {
   position: relative;
   padding-top: 70px;
-  padding-bottom: 120px;
+  padding-bottom: 135px;
   background-color: var(--color-dark);
 
   &__list {
@@ -21,6 +21,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     row-gap: 32px;
     padding-top: var(--trainigsItemBgIconSize);
     background: url("/src/icons/arrow-downleft.svg") 100% 0/var(--trainigsItemBgIconSize) no-repeat;

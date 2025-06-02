@@ -24,12 +24,19 @@
     }
   }
 
+  &__title {
+    margin-left: 42px;
+  }
+
   &__title:not(:last-child) {
     margin-bottom: 14px;
   }
 
   &__description {
-    max-width: 490px;
+    margin-left: 45px;
+    max-width: 443px;
+    line-height: 1.75;
+    letter-spacing: 0.05em;
   }
 
   &__description:not(:last-child) {
@@ -37,5 +44,9 @@
     @media screen and (max-width: 768px) {
       margin-bottom: 20px;
     }
+  }
+
+  &__button {
+    margin-left: 45px;
   }
 }

@@ -25,6 +25,7 @@
   &__body {
     flex-grow: 1;
     max-width: 627px;
+    margin-left: 18px;
   }
 
   &__title {
@@ -102,7 +103,7 @@
   }
 
   &__table :is(td, th) {
-    padding-right: 30px;
+    padding-right: 59px;
   }
 
   &__table :is(td, th):not(:first-child) {
@@ -135,7 +136,7 @@
   }
 
   &__table th {
-    padding-top: 21px;
+    padding-top: 35px;
     padding-bottom: 17px;
     text-align: left;
     text-transform: uppercase;

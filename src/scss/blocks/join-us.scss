@@ -102,6 +102,11 @@
     }
   }
 
+  &__form-title {
+    margin-left: 40px;
+    margin-top: -29px;
+  }
+
   &__form-header {
     display: flex;
     flex-direction: column;
@@ -114,6 +119,8 @@
   }
 
   &__form-subtitle {
+    margin-top: -13px;
+    padding-left: 45px;
     font-size: 20px;
     line-height: 1.65;
     text-transform: uppercase;

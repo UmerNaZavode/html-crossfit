@@ -14,8 +14,16 @@
       padding-bottom: 50px;
     }
   }
+  &__title {
+      margin-top: -8px;
+      margin-left: 40px;
+  }
 
   &__description {
+    max-width: 520px;
+    margin-left: 45px;
+    margin-top: -27px;
+    margin-bottom: -18px;
     font-size: 20px;
     line-height: 1.65;
     text-transform: uppercase;
